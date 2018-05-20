@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+            margin: 20px 0px;
+            animation: big 2.5s infinite alternate;
+        }
+
+        h2 {
+            animation: filter 2.5s infinite alternate;
+        }
+
+        body {
+            /* animation: filter2 2.5s infinite alternate; */
+            background-color: pink;
+        }
+
+        #img2 {
+            animation: big 2.5s infinite alternate;
+        }
+
+        #img1 {
+            animation: smalls 2.5s infinite alternate;
+        }
+
+        h2 {
+            color: red;
+            text-indent: 2em;
+        }
+
+        @keyframes big {
+            from {
+                transform: scale(0.3);
+                opacity: 0.3;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes smalls {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(0.3);
+                opacity: 0.3;
+            }
+        }
+
+        @keyframes filter {
+            from {
+                /* color: pink; */
+                /* font-size: 14px; */
+                opacity: .5;
+            }
+            to {
+                /* color: skyblue; */
+                /* font-size: 20px; */
+                opacity: 1;
+            }
+        }
+
+        @keyframes filter2 {
+            from {
+                background-color: skyblue;
+            }
+            to {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2> you are the best beautiful girl I have ever seen,today is 520,hope you have a good time. I love you,small bone .</h2>
+    <img id="img2" src="./小石头.jpg" alt="">
+    <img id="img1" src="./flower1.gif" alt="">
+    <img src="./flower2.gif" alt="">
+</body>
+
+</html>
